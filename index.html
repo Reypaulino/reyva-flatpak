@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reyva Flatpak</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#faf6f1; --text:#2a1d12; --muted:#6b5a4a; --accent:#c26a2b; --code:#efe6dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#17110c; --text:#f2e8de; --muted:#b5a393; --accent:#e39255; --code:#2a2019; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px; }
+  header { display:flex; align-items:center; gap:16px; }
+  header img { width:64px; height:64px; border-radius:14px; }
+  h1 { margin:0; font-size:2rem; } h2 { margin-top:2.2rem; font-size:1.2rem; }
+  p.sub { margin:0; color:var(--muted); }
+  pre { background:var(--code); padding:14px 16px; border-radius:10px; overflow-x:auto; font-size:14px; }
+  a { color:var(--accent); }
+  .btn { display:inline-block; background:var(--accent); color:#fff; padding:10px 18px; border-radius:10px; text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div><h1>Reyva</h1><p class="sub">Private-by-default web browser · Flatpak for any Linux distro</p></div>
+  </header>
+
+  <h2>Install</h2>
+  <p><a class="btn" href="com.reyapps.Reyva.flatpakref">Install Reyva</a></p>
+  <p>Opens in your software center (GNOME Software, KDE Discover). Or from a terminal:</p>
+  <pre><code>flatpak install --user https://reypaulino.github.io/reyva-flatpak/com.reyapps.Reyva.flatpakref</code></pre>
+  <p>Updates arrive with your normal Flatpak updates (software center, or <code>flatpak update</code>).</p>
+
+  <h2>Already installed Reyva from a <code>.flatpak</code> file?</h2>
+  <p>That copy doesn't update itself. Remove it once, then install from here (your settings stay in <code>~/.var/app/com.reyapps.Reyva/</code>):</p>
+  <pre><code>flatpak uninstall --user com.reyapps.Reyva
+flatpak install --user https://reypaulino.github.io/reyva-flatpak/com.reyapps.Reyva.flatpakref</code></pre>
+
+  <h2>About</h2>
+  <p>Signed with the ReyOS package key (<code>9A17 D49E E392 9AC6 4023 37FA 66E4 0856 2102 6272</code>). Source and other downloads: <a href="https://github.com/Reypaulino/ReyOS">github.com/Reypaulino/ReyOS</a> · <a href="https://reyos.reyapps.com">reyos.reyapps.com</a></p>
+</main>
+</body>
+</html>
